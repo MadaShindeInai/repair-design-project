@@ -1,11 +1,13 @@
-$bg-color: pink;
+@import 'base/normalize';
+@import 'base/fonts';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'base/base';
 
-* {
-  box-sizing: border-box;
-}
-header {
-  width: 100%;
-  height: 100vh;
+//components
+@import 'components/buttons';
 
-  background-image: url("../../assets/images/111.jpg");
-}
+//layout and pages
+@import 'layout/header';
+@import 'layout/footer';
+@import 'pages/home';
