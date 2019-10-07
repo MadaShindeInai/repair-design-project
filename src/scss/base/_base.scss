@@ -1,11 +1,22 @@
-$bg-color: pink;
-
-* {
+  * {
   box-sizing: border-box;
-}
-header {
-  width: 100%;
-  height: 100vh;
+  margin: 0;
+  padding: 0;
+  }
 
-  background-image: url("../../assets/images/111.jpg");
-}
+  a {
+    text-decoration: none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrapper {
+    background: $primary-color;
+  }
+  
+  .inner {
+    @include inner();
+  } 

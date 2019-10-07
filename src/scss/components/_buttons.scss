@@ -1,0 +1,26 @@
+.navbar__button{
+    color: $primary-text-color;
+    font-family: $font-2;
+    font-size: 13px;
+    text-align: center;
+    padding: 13px 33px;
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.start-section__button{
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    font-family: $font-2;
+    background-color: transparent;
+    border: 1px solid $primary-text-color;
+    border-radius: 3px;
+    padding: 19px 42px 21px 41px;
+    margin-right: 20px;
+     &:hover{
+        background-color: $secondary-color;
+     }
+}

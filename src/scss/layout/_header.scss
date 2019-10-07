@@ -1,0 +1,32 @@
+.navbar__link {
+    color: $primary-text-color;
+    font-family: $font-1;
+    font-size: $primary-fsz;
+    &:hover {
+    color: $secondary-color;
+    }
+    padding: 0 3px 0 3px;
+}
+
+.navbar {
+    @include flex();
+    flex-wrap: wrap;
+    list-style-type: $none;
+    margin-left: 82px ;
+    margin-right: 100px;
+}
+
+.navbar__item_phone-number {
+    font-family: $font-2;
+    font-size: $primary-fsz;
+    color: $secondary-color;
+    border-bottom: 1px solid $secondary-color;
+}
+
+.header__logo_text{
+    font-family: $font-2;
+    font-size: $primary-fsz;
+    color: $secondary-color;
+    line-height: 83px;
+}
+
