@@ -1,0 +1,25 @@
+.streak{
+  margin-bottom: 31px;
+  display: inline-block;
+  position: $pos-rel;
+    &::after{
+      content: " ";
+      display: block;
+      position: $pos-a;
+      width: 32px;
+      height: 2px;
+      top:14px;
+      left:40px;
+      background-color: $secondary-color;
+    }
+    &::before{
+      content: " ";
+      display: block;
+      position: $pos-a;
+      width: 32px;
+      height: 2px;
+      top:14px;
+      left:-40px;
+      background-color: $secondary-color;
+    }
+}
