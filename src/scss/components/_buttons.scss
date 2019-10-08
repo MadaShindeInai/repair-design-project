@@ -1,26 +1,76 @@
 .navbar__button{
-    color: $primary-text-color;
-    font-family: $font-2;
-    font-size: 13px;
-    text-align: center;
-    padding: 13px 33px;
-    background-color: $secondary-color;
-    border: none;
-    border-radius: 3px;
-    margin-bottom: 10px;
+  color: $primary-text-color;
+  font-family: $font-2;
+  font-size: 13px;
+  text-align: center;
+  padding: 13px 33px;
+  background-color: $secondary-color;
+  border: none;
+  border-radius: 3px;
+  margin: 10px 0;
+  
 }
 
 .start-section__button{
-    font-size: 13px;
-    line-height: 15px;
-    text-align: center;
-    font-family: $font-2;
-    background-color: transparent;
-    border: 1px solid $primary-text-color;
-    border-radius: 3px;
-    padding: 19px 42px 21px 41px;
-    margin-right: 20px;
-     &:hover{
-        background-color: $secondary-color;
-     }
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  font-family: $font-2;
+  background-color: transparent;
+  border: 1px solid $primary-text-color;
+  border-radius: 3px;
+  padding: 19px 42px 21px 41px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+    &:hover{
+      background-color: $secondary-color;
+    }
+    & + .start-section__button {
+      margin-bottom: 0;
+    }
+}
+
+.scroll-button{
+  position: $pos-a;
+  top: -49px;
+  left: 0;
+  z-index: 2;
+  @include flex();
+  background-color: $primary-color;
+  padding: 34px 49px;
+  border: 0;
+  font-family: $font-5;
+  font-size: 14px;
+  line-height: 19px;
+  color: $primary-text-color;
+  vertical-align: center;
+    img{
+      margin-left: 15px;
+      
+    }
+}
+
+.promo-section__controls {
+  
+  @include flex($justify:start);
+    img {
+      margin-right: 29px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .control-circle {
+      width: 9px;
+      height: 9px;
+      border-radius: 100%;
+      background-color: $secondary-text-color;
+      margin-right: 16px;
+      &:nth-of-type(3){
+        margin-right: 29px;
+      }
+      &:hover {
+        background-color: $primary-text-color;
+        cursor: pointer;
+      }
+    }
 }

@@ -1,22 +1,11 @@
 @mixin inner() {
     max-width: $desktop;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 @mixin flex($justify: space-between, $align: center){
     display: flex;
     justify-content: $justify;
     align-items: $align;
-}
-
-@mixin overlay() {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    opacity: 0.7;
-    background: #000;
-    z-index: 1;
 }
