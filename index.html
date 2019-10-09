@@ -108,7 +108,7 @@
             <div class="promo-section__full-size-img">
               <nav>
                 <ul class="promo-section__navbar">
-                  <li class="promo-section__navbar_item">ROSTOV-ON-DON ADMIRAL</li>
+                  <li class="promo-section__navbar_item">ROSTOV-ON-DON, ADMIRAL</li>
                   <li class="promo-section__navbar_item">SOCHI THIEVES</li>
                   <li class="promo-section__navbar_item">ROSTOV-ON-DON PATRIOTIC</li>
                 </ul>
@@ -146,27 +146,35 @@
                from one of our facilities!<br> Leave a request below and you will receive
                 a link to the broadcast.
           </p>
-          <form action="/login" method="post">
+          <form class="form" action="" method="post">
+            <div class="form__item">
+              <label for="username">Name</label>
+              <input class="form__text-input" type="text" name="username"
+               placeholder="What is your name:" required>
+            </div>  
+            <div class="form__item">
+              <label for="phone-number">Phone</label>
+              <input class="form__phone-input" type="tel" name="phone-number"
+               placeholder="Your phone number:" required>
+            </div>
             
-            <label>Name
-                <input type="text" name="username" placeholder="What is your name:" >
-            </label>
-           
-            <label>Phone
-
-                <input type="tel" name="phone-number" placeholder="Your phone number:">
-            </label>
-            
-            <button name="submit">
+            <button class="form__button" name="submit">
               SUBMIT
             </button>
           
-            <label for="">
-                <input type="checkbox" name="day" required> I agree to the
-                processing of personal data
-            </label>
+            <!-- <div class="checkbox">
+              <input type="checkbox" name="agree" required>
+              <label  for="agree"> I agree to the processing of personal data</label>
+            </div> -->
+            <div class="checkbox-box">
+              <input type="checkbox" id="check" name="check" />
+              <label for="check">I agree to the processing of personal data</label>
+            </div>
           </form>
         </div>
+    </section>
+    <section class="aaa">
+      fddbdfbhgfbgfbgf
     </section>
 	</div>
 </body>

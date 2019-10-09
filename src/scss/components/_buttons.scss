@@ -74,3 +74,43 @@
       }
     }
 }
+
+.form__button {
+  margin-bottom: 10px;
+  font-family: $font-2;
+  font-size: 15px;
+  text-align: center;
+  color: $primary-text-color;
+  background-color: $secondary-color;
+  border: 0;
+  border-radius: 3px;
+  padding: 16px 74px;
+
+}
+
+// FORM CHECKBOX
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+    content: "\2713";
+    color: transparent;
+    display: inline-block;
+    font-size: 12px;    
+    line-height: 18px;
+    margin: -5px 5px 0 0;
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    vertical-align: middle;
+    transition: color ease .3s;
+    background-color: $secondary-color;
+}
+
+input[type=checkbox]:checked + label:before {
+    color: $primary-text-color;
+}
+
+// end of form checkbox
+

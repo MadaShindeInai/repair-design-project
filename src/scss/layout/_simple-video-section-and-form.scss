@@ -41,3 +41,146 @@
       color: $third-text-color;
     }
 }
+
+.form {
+  @include flex($justify: center, $align: flex-end);
+  margin: 0 auto 148px;
+  max-width: 769px;
+  flex-wrap: wrap;
+    &__item {
+      @include flex($justify: flex-start, $align: flex-start);
+      flex-flow: column wrap;
+        label {
+          font-family: $font-1;
+          font-size: 15px;
+          line-height: 20px;
+          color: $third-color;
+        }
+    }
+    &__text-input {
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      padding-top: 7px;
+      outline: 0;
+      width: 231px;
+      border: 0;
+      border-bottom: 1px solid $third-color;
+      margin-right: 58px;
+        &::-webkit-input-placeholder {
+          text-indent: 0px;
+          transition: text-indent 0.3s ease;
+          font-family: $font-1;
+          font-size: 18px;
+          line-height: 24px;
+          color: $third-text-color;
+        }
+        &::-moz-placeholder {
+          text-indent: 0px;
+          transition: text-indent 0.3s ease;
+          font-family: $font-1;
+          font-size: 18px;
+          line-height: 24px;
+          color: $third-text-color;
+        }
+        &:-moz-placeholder {
+          text-indent: 0px;
+          transition: text-indent 0.3s ease;
+          font-family: $font-1;
+          font-size: 18px;
+          line-height: 24px;
+          color: $third-text-color;
+        }
+        &:-ms-input-placeholder {
+          text-indent: 0px;
+          transition: text-indent 0.3s ease;
+          font-family: $font-1;
+          font-size: 18px;
+          line-height: 24px;
+          color: $third-text-color;
+        }
+        &:focus::-webkit-input-placeholder {
+          text-indent: 500px;
+          transition: text-indent 0.3s ease;
+        }
+        &:focus::-moz-placeholder {
+          text-indent: 500px;
+          transition: text-indent 0.3s ease;
+        }
+        &:focus:-moz-placeholder {
+          text-indent: 500px;
+          transition: text-indent 0.3s ease;
+        }
+        &:focus:-ms-input-placeholder {
+          text-indent: 500px;
+          transition: text-indent 0.3s ease;
+        }
+
+    }
+    &__phone-input {
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      padding-top: 7px;
+      outline: 0;
+      width: 231px;
+      border: 0;
+      border-bottom: 1px solid $third-color;
+      margin-right: 49px ;
+        &::-webkit-input-placeholder {
+          text-indent: 0px;
+          transition: text-indent 0.3s ease;
+          font-family: $font-1;
+          font-size: 18px;
+          line-height: 24px;
+          color: $third-text-color;
+        }
+        &::-moz-placeholder {
+          text-indent: 0px;
+          transition: text-indent 0.3s ease;
+          font-family: $font-1;
+          font-size: 18px;
+          line-height: 24px;
+          color: $third-text-color;
+        }
+        &:-moz-placeholder {
+          text-indent: 0px;
+          transition: text-indent 0.3s ease;
+          font-family: $font-1;
+          font-size: 18px;
+          line-height: 24px;
+          color: $third-text-color;
+        }
+        &:-ms-input-placeholder {
+          text-indent: 0px;
+          transition: text-indent 0.3s ease;
+          font-family: $font-1;
+          font-size: 18px;
+          line-height: 24px;
+          color: $third-text-color;
+        }
+        &:focus::-webkit-input-placeholder {
+          text-indent: 500px;
+          transition: text-indent 0.3s ease;}
+        &:focus::-moz-placeholder {
+          text-indent: 500px;
+          transition: text-indent 0.3s ease;}
+        &:focus:-moz-placeholder {
+          text-indent: 500px;
+          transition: text-indent 0.3s ease;}
+        &:focus:-ms-input-placeholder {
+          text-indent: 500px;
+          transition: text-indent 0.3s ease;}
+
+    }
+}
+
+.checkbox-box{
+  margin-left: 80px;
+  margin-top: 33px;
+  margin-bottom: 10px;
+  font-family: $font-1;
+  font-size: 16px;
+  line-height: 22px;
+  color: #181818;
+  font-weight: 500;
+}
+

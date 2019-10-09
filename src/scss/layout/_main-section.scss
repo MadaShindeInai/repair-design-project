@@ -107,14 +107,14 @@
 }
 
 .promo-section__navbar {
-  display: flex;
+  @include flex();
   list-style-type: none;
   color: rgba(255, 255, 255, 0.3);
   margin-bottom: 45px;
 }
 
 .promo-section__navbar_item{
-  margin-right: 60px;
+  
   padding-bottom: 5px;
   font-family: $font-5;
   font-style: normal;
@@ -126,6 +126,9 @@
       color: $secondary-color;
       cursor: pointer;
       border-bottom: 1px solid $secondary-color;
+    }
+    &:last-child{
+      margin-right: 56px;
     }
 }
 
