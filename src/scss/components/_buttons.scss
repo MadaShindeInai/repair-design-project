@@ -114,3 +114,14 @@ input[type=checkbox]:checked + label:before {
 
 // end of form checkbox
 
+.pricing-section__button {
+  font-family: $font-5;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 25px;
+  color: $primary-text-color;
+  padding: 17px 18px;
+  background-color: $secondary-color;
+  border: 0;
+}
