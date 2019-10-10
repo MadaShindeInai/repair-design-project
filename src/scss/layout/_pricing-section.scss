@@ -13,35 +13,38 @@
 }
 
 .pricing-section__content-box {
-  @include flex();
+  @include flex($justify: space-around);
   flex-wrap: wrap;
   max-width: 1236px;
-  margin: 0 auto 124px;
+  margin: 0 auto ;
 }
 
 .pricing-section__content {
   position: $pos-rel;
-  width: 31.71%;
-  height: 608px;
+  // width: 31.71%;
+  width: 392px;
+  height: 618px;
     &:nth-child(1) {
       background-image: url(../../assets/images/contentbg1.png);
       background-repeat: no-repeat;
+      margin-bottom: 179px;
     }
     &:nth-child(2) {
-      margin: 0 30px;
       background-image: url(../../assets/images/contentbg2.png);
       background-repeat: no-repeat;
+      margin-bottom: 179px;
     }
     &:nth-child(3) {
       background-image: url(../../assets/images/contentbg3.png);
       background-repeat: no-repeat;
+      margin-bottom: 179px;
     }
 }
 
 .pricing-section__text-content{
   position: $pos-a;
   
-  height: 314px;
+  height: 320px;
   width: 330px;
   bottom: 0px;
   left: 31px;

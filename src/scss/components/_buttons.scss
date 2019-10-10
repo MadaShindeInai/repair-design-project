@@ -52,7 +52,7 @@
 
 .promo-section__controls {
   
-  @include flex($justify:start);
+  @include flex($justify:flex-start);
     img {
       margin-right: 29px;
       &:hover {
@@ -93,6 +93,21 @@ input[type=checkbox] {
   display: none;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px $primary-color inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: $primary-text-color !important;
+}
+
+input[type=checkbox] + label {
+  cursor: pointer;
+}
+
 input[type=checkbox] + label:before {
     content: "\2713";
     color: transparent;
@@ -124,4 +139,18 @@ input[type=checkbox]:checked + label:before {
   padding: 17px 18px;
   background-color: $secondary-color;
   border: 0;
+    &:hover {
+      background-color: darken($secondary-color, 20%);
+    }
+}
+
+.form-free__button {
+  font-family: $font-2;
+  margin-bottom: 27px;
+  font-size: 13px;
+  color: $primary-text-color;
+  background-color: $secondary-color;
+  border: 0;
+  padding: 19px 44px;
+    
 }
