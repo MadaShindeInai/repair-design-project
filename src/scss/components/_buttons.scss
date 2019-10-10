@@ -144,6 +144,29 @@ input[type=checkbox]:checked + label:before {
     }
 }
 
+.design-section__button {
+  font-family: $font-5;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 25px;
+  color: $primary-text-color;
+  padding: 17px 72px 17px 33px;
+  background-color: $secondary-color;
+  border: 0;
+    &:hover {
+      background-color: darken($secondary-color, 20%);
+    }
+}
+.black {
+  position: $pos-a;
+  bottom: 0;
+  right: 0;
+  width: 103px;
+  height: 29px;
+  background-color: $primary-color;
+}
+
 .form-free__button {
   font-family: $font-2;
   margin-bottom: 27px;

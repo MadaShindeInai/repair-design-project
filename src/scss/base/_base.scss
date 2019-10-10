@@ -20,3 +20,21 @@
   .inner {
     @include inner();
   } 
+
+  .black {
+    position: $pos-a;
+    bottom: 0;
+    right: 0;
+    width: 103px;
+    height: 29px;
+    background-color: $primary-color;
+  }
+
+  .black-3 {
+    position: $pos-a;
+    bottom: 0;
+    right: 0;
+    width: 108px;
+    height: 29px;
+    background-color: $primary-color;
+  }
