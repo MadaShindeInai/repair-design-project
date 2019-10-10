@@ -63,7 +63,7 @@
       background-image: url(../../assets/images/contentbg4.png);
       background-repeat: no-repeat;
       height: 817px;
-      margin-bottom: 50px;
+      
     }
 }
 
@@ -139,6 +139,9 @@
 }
 
 .design-text-line {
+  margin-top: -21px;
+  margin-bottom: 18px;
+  margin-left: 99px;
   text-align: left;
   font-family: $font-2;
   font-size: 15px;

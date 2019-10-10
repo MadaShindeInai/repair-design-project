@@ -1,0 +1,113 @@
+.steps-section {
+  background-color: $primary-color;
+  padding-bottom: 96px;
+}
+
+.steps-section__content {
+  padding-left: 99px;
+  padding-right: 103px;
+  @include flex($justify:flex-start);
+}
+
+.steps-section__text-block {
+  margin-right: 136px;
+  h3 {
+    position: $pos-rel;
+    margin-bottom: 92px;
+    font-family: $font-5;
+    font-weight: 100;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.05em;
+    color: $secondary-color;
+      &::after{
+        content: "";
+        position: $pos-a;
+        top: 54px;
+        left: 225px;
+        width: 92px;
+        height: 1px;
+        background-color: $secondary-color;
+      }
+  }
+  .text-block__process-counter {
+    font-family: $font-5;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: $primary-text-color;
+  }
+  h5 {
+    margin-top: 22px;
+    font-family: $font-5;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 23px;
+    color: $secondary-color;
+  }
+  p {
+    width: 337px;
+    margin-bottom: 15px;
+    font-family: $font-1;
+    font-size: 15px;
+    line-height: 25px;
+    color: $primary-text-color;
+  }
+}
+
+.picture-block {
+  width: 765px;
+  height: 376px;
+  background-size: cover;
+  background-image: url(../../assets/images/stepsImg.png);
+}
+
+.steps-section__visual-block{
+  .position-block{
+    @include flex($align:flex-start, $justify:space-between);
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+    width: 765px;
+
+  }
+  
+  .position-block__inner {
+    @include flex($align:flex-start, );
+    width: 127px;
+    flex-direction: column;
+    margin-bottom: 36px;
+      &:hover {
+        cursor: pointer;
+        span {
+          &:nth-child(1){
+            color: $primary-text-color;
+            border-bottom: 1px solid $secondary-color;
+          }
+          &:nth-child(2){
+            color: $primary-text-color;
+          }
+        }
+      }
+    span {
+      &:nth-child(1){
+        margin-bottom: 12px;
+        width: 19px;
+        font-family: $font-5;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 21px;  
+        color: $secondary-text-color;
+        border-bottom: 1px solid transparent;
+      }
+      &:nth-child(2){
+        font-family: $font-1;
+        font-size: 15px;
+        line-height: 18px;    
+        color: $secondary-text-color;
+      }
+      
+    }
+  }
+}
