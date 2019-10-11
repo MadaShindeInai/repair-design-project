@@ -1,136 +1,137 @@
-.navbar__button{
-  color: $primary-text-color;
-  font-family: $font-2;
-  font-size: 13px;
-  text-align: center;
-  padding: 13px 33px;
-  background-color: $secondary-color;
-  border: none;
-  border-radius: 3px;
+.navbar__button {
   margin: 10px 0;
-  &:hover {
-    background-color: darken($secondary-color, 15%);
-  }
-  
-}
-
-.footer__button{
-  color: $primary-text-color;
-  font-family: $font-2;
-  font-size: 13px;
-  text-align: center;
   padding: 13px 33px;
+  font-size: 13px;
+  font-family: $font-2;
+  text-align: center;
+  color: $primary-text-color;
   background-color: $secondary-color;
   border: none;
   border-radius: 3px;
-  margin: 48px 0;
   &:hover {
     background-color: darken($secondary-color, 15%);
   }
-  
 }
 
-.start-section__button{
+.footer__button {
+  margin: 48px 0;
+  padding: 13px 33px;
+  font-size: 13px;
+  font-family: $font-2;
+  text-align: center;
+  color: $primary-text-color;
+  background-color: $secondary-color;
+  border: none;
+  border-radius: 3px;
+  &:hover {
+    background-color: darken($secondary-color, 15%);
+  }
+}
+
+.start-section__button {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 19px 42px 21px 41px;
   font-size: 13px;
   line-height: 15px;
-  text-align: center;
   font-family: $font-2;
+  text-align: center;
   background-color: transparent;
   border: 1px solid $primary-text-color;
   border-radius: 3px;
-  padding: 19px 42px 21px 41px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-    &:hover{
-      background-color: $secondary-color;
-    }
-    & + .start-section__button {
-      margin-bottom: 0;
-    }
+  &:hover {
+    background-color: $secondary-color;
+  }
+  & + .start-section__button {
+    margin-bottom: 0;
+  }
+  & + .start-section__button + .start-section__button {
+    display: $none;
+  }
 }
 
-.scroll-button{
+.scroll-button {
   position: $pos-a;
   top: -49px;
   left: 0;
   z-index: 2;
-  @include flex();
-  background-color: $primary-color;
   padding: 34px 49px;
-  border: 0;
-  font-family: $font-5;
   font-size: 14px;
   line-height: 19px;
-  color: $primary-text-color;
+  font-family: $font-5;
   vertical-align: center;
-    img{
-      margin-left: 15px;
-      
-    }
+  color: $primary-text-color;
+  background-color: $primary-color;
+  border: 0;
+
+@include flex();
+  img {
+    margin-left: 15px;
+  }
 }
 
 .promo-section__controls {
-  
-  @include flex($justify:flex-start);
-    img {
+  @include flex($justify: flex-start);
+  img {
+    margin-right: 29px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .control-circle {
+    width: 9px;
+    height: 9px;
+    margin-right: 16px;
+    background-color: $secondary-text-color;
+    border-radius: 100%;
+    &:nth-of-type(3) {
       margin-right: 29px;
-      &:hover {
-        cursor: pointer;
-      }
     }
-    .control-circle {
-      width: 9px;
-      height: 9px;
-      border-radius: 100%;
-      background-color: $secondary-text-color;
-      margin-right: 16px;
-      &:nth-of-type(3){
-        margin-right: 29px;
-      }
-      &:hover {
-        background-color: $primary-text-color;
-        cursor: pointer;
-      }
+    &:hover {
+      background-color: $primary-text-color;
+      cursor: pointer;
     }
+  }
 }
 
 .steps-section__controls {
   margin-top: 110px;
   margin-bottom: 20px;
 
-  @include flex($justify:flex-start);
-    img {
+@include flex($justify: flex-start);
+
+  img {
+    margin-right: 29px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .control-circle {
+    width: 9px;
+    height: 9px;
+    margin-right: 16px;
+    background-color: $secondary-text-color;
+    border-radius: 100%;
+    &:nth-of-type(6) {
       margin-right: 29px;
-      &:hover {
-        cursor: pointer;
-      }
     }
-    .control-circle {
-      width: 9px;
-      height: 9px;
-      border-radius: 100%;
-      background-color: $secondary-text-color;
-      margin-right: 16px;
-      &:nth-of-type(6){
-        margin-right: 29px;
-      }
-      &:hover {
-        background-color: $primary-text-color;
-        cursor: pointer;
-      }
+    &:hover {
+      background-color: $primary-text-color;
+      cursor: pointer;
     }
+  }
 }
 
 .form__button {
   margin-bottom: 10px;
-  font-family: $font-2;
+  padding: 16px 74px;
   font-size: 15px;
+  font-family: $font-2;
   text-align: center;
   color: $primary-text-color;
   background-color: $secondary-color;
   border: 0;
   border-radius: 3px;
-  padding: 16px 74px;
   &:hover {
     background-color: darken($secondary-color, 15%);
   }
@@ -142,43 +143,46 @@ input[type=checkbox] {
 }
 
 .form__text-input:-webkit-autofill,
-.form__text-input:-webkit-autofill:hover, 
-.form__text-input:-webkit-autofill:focus, 
+.form__text-input:-webkit-autofill:hover,
+.form__text-input:-webkit-autofill:focus,
 .form__text-input:-webkit-autofill:active,
 .form__phone-input:-webkit-autofill,
-.form__phone-input:-webkit-autofill:hover, 
-.form__phone-input:-webkit-autofill:focus, 
-.form__phone-input:-webkit-autofill:active, {
+.form__phone-input:-webkit-autofill:hover,
+.form__phone-input:-webkit-autofill:focus,
+.form__phone-input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px $primary-text-color inset !important;
+          box-shadow: 0 0 0 30px $primary-text-color inset !important;
 }
 
 .questions-form__text-input:-webkit-autofill,
-.questions-form__text-input:-webkit-autofill:hover, 
-.questions-form__text-input:-webkit-autofill:focus, 
+.questions-form__text-input:-webkit-autofill:hover,
+.questions-form__text-input:-webkit-autofill:focus,
 .questions-form__text-input:-webkit-autofill:active,
 .questions-form__phone-input:-webkit-autofill,
-.questions-form__phone-input:-webkit-autofill:hover, 
-.questions-form__phone-input:-webkit-autofill:focus, 
+.questions-form__phone-input:-webkit-autofill:hover,
+.questions-form__phone-input:-webkit-autofill:focus,
 .questions-form__phone-input:-webkit-autofill:active,
 .questions-form__question-input:-webkit-autofill,
-.questions-form__question-input:-webkit-autofill:hover, 
-.questions-form__question-input:-webkit-autofill:focus, 
-.questions-form__question-input:-webkit-autofill:active,{
-    -webkit-box-shadow: 0 0 0 30px $forth-color inset !important;
+.questions-form__question-input:-webkit-autofill:hover,
+.questions-form__question-input:-webkit-autofill:focus,
+.questions-form__question-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px $forth-color inset !important;
+          box-shadow: 0 0 0 30px $forth-color inset !important;
 }
 .form-free__text-input-free:-webkit-autofill,
-.form-free__text-input-free:-webkit-autofill:hover, 
-.form-free__text-input-free:-webkit-autofill:focus, 
+.form-free__text-input-free:-webkit-autofill:hover,
+.form-free__text-input-free:-webkit-autofill:focus,
 .form-free__text-input-free:-webkit-autofill:active,
 .form-free__phone-input-free:-webkit-autofill,
-.form-free__phone-input-free:-webkit-autofill:hover, 
-.form-free__phone-input-free:-webkit-autofill:focus, 
+.form-free__phone-input-free:-webkit-autofill:hover,
+.form-free__phone-input-free:-webkit-autofill:focus,
 .form-free__phone-input-free:-webkit-autofill:active,
 .form-free__email-input-free:-webkit-autofill,
-.form-free__email-input-free:-webkit-autofill:hover, 
-.form-free__email-input-free:-webkit-autofill:focus, 
-.form-free__email-input-free:-webkit-autofill:active,  {
-    -webkit-box-shadow: 0 0 0 30px $primary-color inset !important;
+.form-free__email-input-free:-webkit-autofill:hover,
+.form-free__email-input-free:-webkit-autofill:focus,
+.form-free__email-input-free:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px $primary-color inset !important;
+          box-shadow: 0 0 0 30px $primary-color inset !important;
 }
 
 .form-free__text-input-free:-webkit-autofill,
@@ -186,7 +190,7 @@ input[type=checkbox] {
 .form-free__email-input-free:-webkit-autofill,
 .questions-form__phone-input:-webkit-autofill,
 .questions-form__text-input:-webkit-autofill,
-.questions-form__question-input:-webkit-autofill, {
+.questions-form__question-input:-webkit-autofill {
   -webkit-text-fill-color: $primary-text-color !important;
 }
 
@@ -196,79 +200,78 @@ input[type=checkbox] + label {
 }
 
 input[type=checkbox] + label:before {
-    content: "\2713";
-    color: transparent;
-    display: inline-block;
-    font-size: 12px;    
-    line-height: 18px;
-    margin: -5px 5px 0 0;
-    height: 18px;
-    width: 18px;
-    text-align: center;
-    vertical-align: middle;
-    transition: color ease .3s;
-    background-color: $secondary-color;
+  content: "\2713";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: -5px 5px 0 0;
+  font-size: 12px;
+  line-height: 18px;
+  vertical-align: middle;
+  text-align: center;
+  color: transparent;
+  background-color: $secondary-color;
+  transition: color ease 0.3s;
 }
 
 input[type=checkbox]:checked + label:before {
-    color: $primary-text-color;
+  color: $primary-text-color;
 }
 
 // end of form checkbox
 
 .pricing-section__button {
-  font-family: $font-5;
+  padding: 17px 18px;
   font-style: normal;
   font-weight: 100;
   font-size: 18px;
   line-height: 25px;
+  font-family: $font-5;
   color: $primary-text-color;
-  padding: 17px 18px;
   background-color: $secondary-color;
   border: 0;
-    &:hover {
-      background-color: darken($secondary-color, 20%);
-    }
+  &:hover {
+    background-color: darken($secondary-color, 20%);
+  }
 }
 
 .design-section__button {
-  font-family: $font-5;
+  padding: 17px 72px 17px 33px;
   font-style: normal;
   font-weight: 100;
   font-size: 18px;
   line-height: 25px;
+  font-family: $font-5;
   color: $primary-text-color;
-  padding: 17px 72px 17px 33px;
   background-color: $secondary-color;
   border: 0;
-    &:hover {
-      background-color: darken($secondary-color, 20%);
-    }
+  &:hover {
+    background-color: darken($secondary-color, 20%);
+  }
 }
 
 .form-free__button {
-  font-family: $font-2;
   margin-bottom: 27px;
+  padding: 19px 44px;
   font-size: 13px;
+  font-family: $font-2;
   color: $primary-text-color;
   background-color: $secondary-color;
   border: 0;
-  padding: 19px 44px;
   &:hover {
     background-color: darken($secondary-color, 15%);
   }
-    
 }
 
 .question__button {
   margin-bottom: 34px;
-  font-family: $font-2;
+  padding: 16px 74px;
   font-size: 15px;
+  font-family: $font-2;
   text-align: center;
   color: $primary-text-color;
   background-color: $secondary-color;
   border: 0;
-  padding: 16px 74px;
   &:hover {
     background-color: darken($secondary-color, 15%);
   }

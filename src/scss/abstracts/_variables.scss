@@ -1,37 +1,35 @@
 $font-1: "FuturaBookC", sans-serif;
-
 $font-2: "FuturaDemiC", sans-serif;
-
 $font-3: "FuturaMediumC", sans-serif;
-
 $font-4: "Proxima Nova", sans-serif;
-
 $font-5: "Yeseva One", sans-serif;
-
+$primary-fsz: 0.875rem; //14px
+$fsz-2: 0.75rem; //12px
+$fsz-3: 1.4375rem; //23px
+$fsz-4: 1.125rem; //18px
+$fsz-5: 1.375rem; //22px
+$fsz-6: 2.5rem;
+$fsz-7: 1.6875rem;
+$fsz-8: 0.9375rem; //40px
 $mobile: 375px;
-
 $desktop: 1440px;
-
+$media-8: 1420px;
+$media-1: 1150px;
+$media-2: 1050px;
+$media-3: 960px;
+$media-4: 820px;
+$media-5: 740px;
+$media-7: 600px;
+$media-9: 571px;
+$media-6: 510px;
 $primary-color: #131313;
-
 $primary-text-color: #ffffff;
-
-$secondary-color: #E3B873;
-
-$secondary-text-color:rgba(255, 255, 255, 0.3);
-
+$secondary-color: #e3b873;
+$secondary-text-color: rgba(255, 255, 255, 0.3);
 $third-text-color: #363636;
-
 $third-color: rgba(54, 54, 54, 0.5);
-
 $forth-color: #181818;
-
 $forth-text-color: #959595;
-
 $none: none;
-
-$primary-fsz: 14px;
-
 $pos-rel: relative;
-
 $pos-a: absolute;

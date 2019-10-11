@@ -2,43 +2,48 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  }
+}
 
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, {
+  margin: 0;
+  padding: 0;
+}
 
-  footer{
-    background-color: $primary-color;
-  }
+footer {
+  background-color: $primary-color;
+}
 
-  .wrapper {
-    background: $primary-color;
-  }
-  
-  .inner {
-    @include inner();
-  } 
+.wrapper {
+  background: $primary-color;
+}
 
-  .black {
-    position: $pos-a;
-    bottom: 0;
-    right: 0;
-    width: 103px;
-    height: 29px;
-    background-color: $primary-color;
-  }
+.inner {
+  @include inner();
+} 
 
-  .black-3 {
-    position: $pos-a;
-    bottom: 0;
-    right: 0;
-    width: 108px;
-    height: 29px;
-    background-color: $primary-color;
-  }
+.black {
+  position: $pos-a;
+  right: 0;
+  bottom: 0;
+  width: 103px;
+  height: 29px;
+  background-color: $primary-color;
+}
+
+.black-3 {
+  position: $pos-a;
+  right: 0;
+  bottom: 0;
+  width: 108px;
+  height: 29px;
+  background-color: $primary-color;
+}

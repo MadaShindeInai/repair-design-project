@@ -1,32 +1,91 @@
 .navbar__link {
-    color: $primary-text-color;
-    font-family: $font-1;
-    font-size: $primary-fsz;
-    &:hover {
+  padding: 0 5px 0 5px;
+  font-size: $primary-fsz;
+  font-family: $font-1;
+  color: $primary-text-color;
+  &:hover {
     color: $secondary-color;
-    }
-    padding: 0 5px 0 5px;
+  }
 }
 
 .navbar {
-    @include flex();
-    flex-wrap: wrap;
-    list-style-type: $none;
-    margin-left: 82px ;
-    margin-right: 100px;
+  flex-wrap: wrap;
+  margin-right: 100px;
+  margin-left: 82px ;
+  list-style-type: $none;
+
+@include flex();
 }
 
 .navbar__item_phone-number {
-    font-family: $font-2;
-    font-size: $primary-fsz;
-    color: $secondary-color;
-    border-bottom: 1px solid $secondary-color;
+  font-size: $primary-fsz;
+  font-family: $font-2;
+  color: $secondary-color;
+  border-bottom: 1px solid $secondary-color;
 }
 
-.header__logo_text{
-    font-family: $font-2;
-    font-size: $primary-fsz;
-    color: $secondary-color;
-    line-height: 83px;
+.header__logo_text {
+  font-size: $primary-fsz;
+  line-height: 83px;
+  font-family: $font-2;
+  color: $secondary-color;
 }
 
+@media (max-width: $media-1 ) {
+  .navbar__item:nth-child(2) {
+    display: $none;
+  }
+}
+
+@media (max-width: $media-2 ) {
+  .navbar__item:nth-child(3) {
+    display: $none;
+  }
+}
+
+@media (max-width: $media-3 ) {
+  .navbar__item:nth-child(9) {
+    display: $none;
+  }
+}
+
+@media (max-width: $media-4 ) {
+  .navbar__item:nth-child(7) {
+    display: $none;
+  }
+}
+
+@media (max-width: $media-5 ) {
+  .navbar {
+    margin: 23px 18px 24px 18px;
+  }
+  .navbar__item_phone-number {
+    font-size: $fsz-2;
+    color: $primary-text-color;
+    border-bottom: 0 solid $secondary-color;
+  }
+  .header__logo_text {
+    font-size: $fsz-2;
+    line-height: 46px;
+  }
+  .navbar__link {
+    font-size: $fsz-2;
+  }
+}
+
+@media (max-width: $media-6 ) {
+  .navbar__item:nth-child(4),
+  .navbar__item:nth-child(5),
+  .navbar__item:nth-child(6) {
+    display: $none;
+  }
+}
+
+@media (max-width: $mobile ) {
+  .header__logo_text {
+    line-height: 0;
+  }
+  .header__logo {
+    font-size: $fsz-2;
+  }
+}

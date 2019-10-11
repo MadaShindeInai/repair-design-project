@@ -1,11 +1,15 @@
 @mixin inner() {
-    max-width: $desktop;
-    margin: 0 auto;
-    overflow: hidden;
+  max-width: $desktop;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-@mixin flex($justify: space-between, $align: center){
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
+@mixin flex($justify: space-between, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin autoM() {
+  margin: 0 auto;
 }

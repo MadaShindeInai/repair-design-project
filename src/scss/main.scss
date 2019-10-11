@@ -1,22 +1,21 @@
-@import 'base/normalize';
-@import 'base/fonts';
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
-@import 'base/base';
+@import "base/normalize";
+@import "base/fonts";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "base/base";
 
 //components
-@import 'components/buttons';
-@import 'components/repeating-elements';
+@import "components/buttons";
+@import "components/repeating-elements";
 
 //layout and pages
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/main-section';
-@import 'layout/simple-video-section-and-form';
-@import 'layout/pricing-section-and-design-section';
-@import 'layout/free-invite-section';
-@import 'layout/fantasies-section';
-@import 'layout/steps-section';
-@import 'layout/our-team-section';
-@import 'layout/testimonials';
-@import 'layout/last-section';
+@import "layout/header";
+@import "layout/main-section";
+@import "layout/simple-video-section-and-form";
+@import "layout/pricing-section-and-design-section";
+@import "layout/free-invite-section";
+@import "layout/fantasies-section";
+@import "layout/steps-section";
+@import "layout/our-team-section";
+@import "layout/testimonials";
+@import "layout/last-section";
