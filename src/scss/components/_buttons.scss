@@ -8,6 +8,25 @@
   border: none;
   border-radius: 3px;
   margin: 10px 0;
+  &:hover {
+    background-color: darken($secondary-color, 15%);
+  }
+  
+}
+
+.footer__button{
+  color: $primary-text-color;
+  font-family: $font-2;
+  font-size: 13px;
+  text-align: center;
+  padding: 13px 33px;
+  background-color: $secondary-color;
+  border: none;
+  border-radius: 3px;
+  margin: 48px 0;
+  &:hover {
+    background-color: darken($secondary-color, 15%);
+  }
   
 }
 
@@ -112,7 +131,9 @@
   border: 0;
   border-radius: 3px;
   padding: 16px 74px;
-
+  &:hover {
+    background-color: darken($secondary-color, 15%);
+  }
 }
 
 // FORM CHECKBOX
@@ -120,16 +141,55 @@ input[type=checkbox] {
   display: none;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active  {
+.form__text-input:-webkit-autofill,
+.form__text-input:-webkit-autofill:hover, 
+.form__text-input:-webkit-autofill:focus, 
+.form__text-input:-webkit-autofill:active,
+.form__phone-input:-webkit-autofill,
+.form__phone-input:-webkit-autofill:hover, 
+.form__phone-input:-webkit-autofill:focus, 
+.form__phone-input:-webkit-autofill:active, {
+  -webkit-box-shadow: 0 0 0 30px $primary-text-color inset !important;
+}
+
+.questions-form__text-input:-webkit-autofill,
+.questions-form__text-input:-webkit-autofill:hover, 
+.questions-form__text-input:-webkit-autofill:focus, 
+.questions-form__text-input:-webkit-autofill:active,
+.questions-form__phone-input:-webkit-autofill,
+.questions-form__phone-input:-webkit-autofill:hover, 
+.questions-form__phone-input:-webkit-autofill:focus, 
+.questions-form__phone-input:-webkit-autofill:active,
+.questions-form__question-input:-webkit-autofill,
+.questions-form__question-input:-webkit-autofill:hover, 
+.questions-form__question-input:-webkit-autofill:focus, 
+.questions-form__question-input:-webkit-autofill:active,{
+    -webkit-box-shadow: 0 0 0 30px $forth-color inset !important;
+}
+.form-free__text-input-free:-webkit-autofill,
+.form-free__text-input-free:-webkit-autofill:hover, 
+.form-free__text-input-free:-webkit-autofill:focus, 
+.form-free__text-input-free:-webkit-autofill:active,
+.form-free__phone-input-free:-webkit-autofill,
+.form-free__phone-input-free:-webkit-autofill:hover, 
+.form-free__phone-input-free:-webkit-autofill:focus, 
+.form-free__phone-input-free:-webkit-autofill:active,
+.form-free__email-input-free:-webkit-autofill,
+.form-free__email-input-free:-webkit-autofill:hover, 
+.form-free__email-input-free:-webkit-autofill:focus, 
+.form-free__email-input-free:-webkit-autofill:active,  {
     -webkit-box-shadow: 0 0 0 30px $primary-color inset !important;
 }
 
-input:-webkit-autofill {
+.form-free__text-input-free:-webkit-autofill,
+.form-free__phone-input-free:-webkit-autofill,
+.form-free__email-input-free:-webkit-autofill,
+.questions-form__phone-input:-webkit-autofill,
+.questions-form__text-input:-webkit-autofill,
+.questions-form__question-input:-webkit-autofill, {
   -webkit-text-fill-color: $primary-text-color !important;
 }
+
 
 input[type=checkbox] + label {
   cursor: pointer;
@@ -194,5 +254,22 @@ input[type=checkbox]:checked + label:before {
   background-color: $secondary-color;
   border: 0;
   padding: 19px 44px;
+  &:hover {
+    background-color: darken($secondary-color, 15%);
+  }
     
+}
+
+.question__button {
+  margin-bottom: 34px;
+  font-family: $font-2;
+  font-size: 15px;
+  text-align: center;
+  color: $primary-text-color;
+  background-color: $secondary-color;
+  border: 0;
+  padding: 16px 74px;
+  &:hover {
+    background-color: darken($secondary-color, 15%);
+  }
 }
