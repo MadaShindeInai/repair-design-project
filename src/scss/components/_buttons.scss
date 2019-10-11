@@ -65,6 +65,7 @@
   border: 0;
 
 @include flex();
+
   img {
     margin-left: 15px;
   }
@@ -91,6 +92,20 @@
       background-color: $primary-text-color;
       cursor: pointer;
     }
+  }
+}
+
+.simple-mobi-form__button {
+  width: 340px;
+  margin-bottom: 0;
+  padding: 18px 44px;
+  font-size: 13px;
+  font-family: $font-2;
+  color: $primary-text-color;
+  background-color: $secondary-color;
+  border: 0;
+  &:hover {
+    background-color: darken($secondary-color, 15%);
   }
 }
 

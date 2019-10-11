@@ -13,3 +13,17 @@
 @mixin autoM() {
   margin: 0 auto;
 }
+
+@mixin form-input($color: $third-text-color) {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: $font-1;
+  color: $color;
+  text-indent: 0;
+  transition: text-indent 0.3s ease;
+}
+
+@mixin placeholderAction($value: 500px) {
+  text-indent: $value;
+  transition: text-indent 0.3s ease;
+}
