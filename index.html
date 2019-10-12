@@ -159,12 +159,14 @@
             <div class="form__item">
               <label for="username">Name</label>
               <input class="form__text-input" type="text" name="username"
-               placeholder="What is your name:" required>
+               placeholder="What is your name:" pattern="^[a-zA-Z]+$" required>
+               <div class="requirements">Must contain name!</div>
             </div>  
             <div class="form__item">
               <label for="phone-number">Phone</label>
               <input class="form__phone-input" type="tel" name="phone-number"
-               placeholder="Your phone number:" required>
+               placeholder="Your phone number:" pattern="[0-9]{5,20}" required>
+               <div class="requirements">Must contain 5-20 digits!</div>
             </div>
             
             <button class="form__button" name="submit">
@@ -181,12 +183,14 @@
                   <div class="simple-mobi-form__item-free">
                     <label for="username">Name</label>
                     <input class="simple-mobi-form__text-input-free" type="text" name="username"
-                     placeholder="What is your name:" required>
+                     placeholder="What is your name:" pattern="^[a-zA-Z]+$" required>
+                     <div class="requirements">Must contain letters!</div>
                   </div>  
                   <div class="simple-mobi-form__item-free">
                     <label for="phone-number">Phone</label>
                     <input class="simple-mobi-form__phone-input-free" type="tel" name="phone-number"
-                     placeholder="Your phone number:" required>
+                     placeholder="Your phone number:"pattern="[0-9]{5,20}" required>
+                     <div class="requirements">Must contain 5-20 digits!</div>
                   </div>
                   <div class="checkbox-box-free">
                       <input class="free-checkbox" type="checkbox" id="check-simple" name="check" required />
@@ -293,17 +297,20 @@
               <div class="form-free__item-free">
                 <label for="username">Name</label>
                 <input class="form-free__text-input-free" type="text" name="username"
-                 placeholder="What is your name:" required>
+                 placeholder="What is your name:"pattern="^[a-zA-Z]+$" required>
+                 <div class="requirements">Must contain letters!!</div>
               </div>  
               <div class="form-free__item-free">
                 <label for="phone-number">Phone</label>
                 <input class="form-free__phone-input-free" type="tel" name="phone-number"
-                 placeholder="Your phone number:" required>
+                 placeholder="Your phone number:" pattern="[0-9]{5,20}" required>
+                 <div class="requirements">Must contain 5-20 digits!</div>
               </div>
               <div class="form-free__item-free">
                 <label for="email">Email</label>
                 <input class="form-free__email-input-free" type="email" name="e-mail"
                    placeholder="Your email" required>
+                <div class="requirements">Must be a valid email address.</div>
               </div>
               <div class="checkbox-box-free">
                   <input class="free-checkbox" type="checkbox" id="check-free" name="check" required />
@@ -631,18 +638,23 @@
             <div class="questions-form__item">
               <label for="username">Name</label>
               <input class="questions-form__text-input" type="text" name="username"
-               placeholder="What is your name:" required>
+               placeholder="What is your name:" pattern="^[a-zA-Z]+$" required>
+               <div class="requirements">Must contain letters!</div>
             </div>  
             <div class="questions-form__item">
               <label for="phone-number">Phone</label>
               <input class="questions-form__phone-input" type="tel" name="phone-number"
-               placeholder="Your phone number:" required>
+               placeholder="Your phone number:" pattern="[0-9]{5,20}" required>
+               <div class="requirements">Must contain 5-20 digits!</div>
             </div>
           </div>
           <div class="questions-form__item">
             <label for="question">Question</label>
             <input class="questions-form__question-input" type="text" name="question"
-               placeholder="I want to know:" required>
+               placeholder="I want to know:" pattern=".{20,}" required>
+               <div class="requirements">
+                  Must be at least 20 characters!
+                </div>
           </div>
           <div class="checkbox-box-questions-form">
             <input class="free-checkbox" type="checkbox" id="check-question" name="check" required />
