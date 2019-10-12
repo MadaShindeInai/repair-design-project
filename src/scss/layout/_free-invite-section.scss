@@ -1,14 +1,15 @@
 .free-invite-section {
-  background-color: $primary-text-color;
   padding-bottom: 130px;
+  background-color: $primary-text-color;
 }
 
 .free-invite-section__inner {
   position: $pos-rel;
-  @include flex($justify:flex-start);
+
+@include flex($justify: flex-start);
 }
 
-.free-invite-section__diagram{
+.free-invite-section__diagram {
   position: $pos-rel;
   left: -157px;
   width: 936px;
@@ -23,323 +24,273 @@
   width: 637px;
   height: 637px;
   background-color: transparent;
-  border-radius: 100%;
+  border-top: 1px solid $secondary-color;
   border-right: 3px solid $secondary-color;
-  border-top : 1px solid $secondary-color;
-  border-bottom : 1px solid $secondary-color;
-  
-
+  border-bottom: 1px solid $secondary-color;
+  border-radius: 100%;
 }
 
 .diagram-circle__text-box {
-  @include flex($justify:flex-start);
-    &:nth-child(1){
-      position: $pos-a;
-      top: 62px;
-      left: 511px;
-      height: 46px;
+  @include flex($justify: flex-start);
+  &:nth-child(1) {
+    position: $pos-a;
+    top: 62px;
+    left: 511px;
+    height: 46px;
+    background-color: $primary-text-color;
+  }
+
+  &:nth-child(2) {
+    position: $pos-a;
+    top: 173px;
+    left: 587px;
+    height: 57px;
+    background-color: $primary-text-color;
+    .diagram-circle__text {
+      width: 224px;
+    }
+  }
+
+  &:nth-child(3) {
+    position: $pos-a;
+    top: 334px;
+    left: 612px;
+    height: 66px;
+    background-color: $primary-text-color;
+    .diagram-circle__text {
+      width: 224px;
+    }
+  }
+
+  &:nth-child(4) {
+    position: $pos-a;
+    top: 464px;
+    left: 547px;
+    height: 86px;
+    background-color: transparent;
+    .diagram-circle__count-box {
+      width: 46px;
+      height: 68px;
+      margin-top: 20px;
       background-color: $primary-text-color;
     }
-
-    &:nth-child(2){
-      position: $pos-a;
-      top: 173px;
-      left: 587px;
-      height: 57px;
-      background-color: $primary-text-color;
-      .diagram-circle__text {
-        width: 224px;
-      }
+    .diagram-circle__text {
+      width: 284px;
     }
-
-    &:nth-child(3){
-      position: $pos-a;
-      top: 334px;
-      left: 612px;
-      height: 66px;
-      background-color: $primary-text-color;
-      .diagram-circle__text {
-        width: 224px;
-      }
-    }
-
-    &:nth-child(4){
-      position: $pos-a;
-      top: 464px;
-      left: 547px;
-      height: 86px;
-      background-color: transparent;
-        .diagram-circle__count-box {
-          margin-top: 20px;
-          height: 68px;
-          width: 46px;
-          background-color: $primary-text-color;
-        }
-        .diagram-circle__text {
-          width: 284px;
-        }
-    }
+  }
   .diagram-circle__count {
     display: inline-block;
-    font-family: $font-5;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 18px;
-    text-align: center;
-    background-color: $secondary-color;
-    border-radius: 100%;
     width: 42px;
     height: 42px;
     padding-top: 11px;
+    font-style: normal;
+    font-weight: 100;
+    font-size: $fsz-4;
+    font-family: $font-5;
+    text-align: center;
     color: $primary-text-color;
+    background-color: $secondary-color;
+    border-radius: 100%;
   }
 
   .diagram-circle__text {
-    margin-left: 17px;
     display: inline-block;
     width: 364px;
+    margin-left: 17px;
+    font-size: $fsz-4;
     font-family: $font-3;
-    font-size: 18px;
     color: $third-text-color;
   }
-
 }
 
 .free-invite-section__form-box {
   display: block;
-  margin-right: 99px;
   width: 506px;
-  background-color: $primary-color;
+  margin-right: 99px;
   text-align: center;
-  
-    h4 {
-      margin: 28px auto 39px;
-      max-width: 297px;
-      font-family: $font-2;
-      font-size: 20px;
-      line-height: 25px;
-      color: $primary-text-color;
-    }
+  background-color: $primary-color;
+
+  h4 {
+    max-width: 297px;
+    margin: 28px auto 39px;
+    font-size: $fsz-11;
+    line-height: 25px;
+    font-family: $font-2;
+    color: $primary-text-color;
+  }
 }
 // dome form
 .form-free {
-  @include flex($justify: flex-end, $align: flex-end);
-  margin: 0 auto;
   flex-wrap: wrap;
   max-width: 408px;
   text-align: left;
-    &__item-free {
-      @include flex($justify: flex-start, $align: flex-start);
-      flex-flow: column wrap;
-        label {
-          font-family: $font-1;
-          font-size: 15px;
-          line-height: 20px;
-          color: $secondary-text-color;
-        }
-    }
-    &__text-input-free {
-      margin-bottom: 48px;
-      padding-bottom: 8px;
-      padding-top: 7px;
-      outline: 0;
-      width: 408px;
-      color: $primary-text-color;
-      border: 0;
-      background-color: $primary-color;
-      border-bottom: 1px solid $secondary-text-color;
-        &::-webkit-input-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &::-moz-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &:-moz-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &:-ms-input-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &:focus::-webkit-input-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;
-        }
-        &:focus::-moz-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;
-        }
-        &:focus:-moz-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;
-        }
-        &:focus:-ms-input-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;
-        }
 
-    }
-    &__phone-input-free {
-      padding-bottom: 8px;
-      padding-top: 7px;
-      outline: 0;
-      width: 408px;
-      color: $primary-text-color;
-      border: 0;
-      background-color: $primary-color;
-      border-bottom: 1px solid $secondary-text-color;
-      margin-bottom: 48px;
-        &::-webkit-input-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &::-moz-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &:-moz-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &:-ms-input-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &:focus::-webkit-input-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;}
-        &:focus::-moz-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;}
-        &:focus:-moz-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;}
-        &:focus:-ms-input-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;}
+@include autoM();
 
-    }
+@include flex($justify: flex-end, $align: flex-end);
 
-    &__email-input-free {
-      padding-bottom: 8px;
-      padding-top: 7px;
-      outline: 0;
-      width: 408px;
-      color: $primary-text-color;
-      border: 0;
-      background-color: $primary-color;
-      border-bottom: 1px solid $secondary-text-color;
-      margin-bottom: 16px;
-        &::-webkit-input-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &::-moz-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &:-moz-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &:-ms-input-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &:focus::-webkit-input-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;}
-        &:focus::-moz-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;}
-        &:focus:-moz-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;}
-        &:focus:-ms-input-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;}
+  &__item-free {
+    flex-flow: column wrap;
 
+@include flex($justify: flex-start, $align: flex-start);
+
+    label {
+      font-size: $fsz-8;
+      line-height: 20px;
+      font-family: $font-1;
+      color: $secondary-text-color;
     }
+  }
+  &__text-input-free {
+    width: 408px;
+    margin-bottom: 48px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    color: $primary-text-color;
+    background-color: $primary-color;
+    border: 0;
+    border-bottom: 1px solid $secondary-text-color;
+    outline: 0;
+    &::-webkit-input-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &::-moz-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &:-moz-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &:-ms-input-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &:focus::-webkit-input-placeholder {
+      @include placeholderAction();
+    }
+    &:focus::-moz-placeholder {
+      @include placeholderAction();
+    }
+    &:focus:-moz-placeholder {
+      @include placeholderAction();
+    }
+    &:focus:-ms-input-placeholder {
+      @include placeholderAction();
+    }
+  }
+  &__phone-input-free {
+    width: 408px;
+    margin-bottom: 48px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    color: $primary-text-color;
+    background-color: $primary-color;
+    border: 0;
+    border-bottom: 1px solid $secondary-text-color;
+    outline: 0;
+    &::-webkit-input-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &::-moz-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &:-moz-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &:-ms-input-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &:focus::-webkit-input-placeholder {
+      @include placeholderAction();
+    }
+    &:focus::-moz-placeholder {
+      @include placeholderAction();
+    }
+    &:focus:-moz-placeholder {
+      @include placeholderAction();
+    }
+    &:focus:-ms-input-placeholder {
+      @include placeholderAction();
+    }
+  }
+
+  &__email-input-free {
+    width: 408px;
+    margin-bottom: 16px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    color: $primary-text-color;
+    background-color: $primary-color;
+    border: 0;
+    border-bottom: 1px solid $secondary-text-color;
+    outline: 0;
+    &::-webkit-input-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &::-moz-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &:-moz-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &:-ms-input-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &:focus::-webkit-input-placeholder {
+      @include placeholderAction();
+    }
+    &:focus::-moz-placeholder {
+      @include placeholderAction();
+    }
+    &:focus:-moz-placeholder {
+      @include placeholderAction();
+    }
+    &:focus:-ms-input-placeholder {
+      @include placeholderAction();
+    }
+  }
 }
 
-.checkbox-box-free{
-  font-family: $font-1;
-  font-size: 16px;
-  line-height: 22px;
+.checkbox-box-free {
   width: 408px;
-  color: $primary-text-color;
-  font-weight: 500;
-  margin-bottom: 39px;
   margin-right: 49px;
-  
+  margin-bottom: 39px;
+  font-weight: 500;
+  font-size: $fsz-9;
+  line-height: 22px;
+  font-family: $font-1;
+  color: $primary-text-color;
 }
 
 .save-your-money {
-  @include flex($justify: flex-start );
   padding-top: 38px;
-  
   text-align: left;
   background-color: $primary-text-color;
-  img{
+
+@include flex($justify: flex-start );
+
+  img {
     margin: 0 25px ;
   }
   &__text {
-    
-    font-family: $font-2;
-    font-size: 20px;
+    font-size: $fsz-11;
     line-height: 25px;
-
+    font-family: $font-2;
     color: $secondary-color;
+  }
+}
+
+@media (max-width:$media-10) {
+  .free-invite-section__form-box {
+    margin-right: 0;
+  }
+  .diagram-circle__text-box:nth-child(1) {
+    left: 450px;
+  }
+  .diagram-circle__text-box:nth-child(3) .diagram-circle__text {
+    width: 200px;
+  }
+}
+@media (max-width:$media-1) {
+  .free-invite-section {
+    display: $none;
   }
 }
