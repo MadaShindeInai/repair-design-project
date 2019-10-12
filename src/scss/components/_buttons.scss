@@ -291,3 +291,24 @@ input[type=checkbox]:checked + label:before {
     background-color: darken($secondary-color, 15%);
   }
 }
+
+@media (max-width:$media-6) {
+  .pricing-section__button {
+    padding: 12px 16px 12px 16px;
+    font-size: $fsz-8;
+    line-height: 25px;
+  }
+
+  .design-section__button {
+    padding: 11px 44px 8px 44px;
+    font-size: $fsz-8;
+    line-height: 21px;
+    font-family: $font-5;
+    color: $primary-text-color;
+    background-color: $secondary-color;
+    border: 0;
+    &:hover {
+      background-color: darken($secondary-color, 20%);
+    }
+  }
+}

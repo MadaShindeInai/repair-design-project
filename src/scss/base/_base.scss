@@ -13,7 +13,7 @@ h2,
 h3,
 h4,
 h5,
-h6, {
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -34,7 +34,7 @@ footer {
   position: $pos-a;
   right: 0;
   bottom: 0;
-  width: 103px;
+  width: 104px;
   height: 29px;
   background-color: $primary-color;
 }
@@ -43,7 +43,18 @@ footer {
   position: $pos-a;
   right: 0;
   bottom: 0;
-  width: 108px;
+  width: 109px;
   height: 29px;
   background-color: $primary-color;
+}
+
+@media (max-width:$media-6) {
+  .black {
+    width: 81px;
+    height: 20px;
+  }
+  .black-3 {
+    width: 85px;
+    height: 20px;
+  }
 }
