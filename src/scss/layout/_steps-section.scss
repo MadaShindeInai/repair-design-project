@@ -1,12 +1,13 @@
 .steps-section {
-  background-color: $primary-color;
   padding-bottom: 96px;
+  background-color: $primary-color;
 }
 
 .steps-section__content {
-  padding-left: 99px;
   padding-right: 103px;
-  @include flex($justify:flex-start);
+  padding-left: 99px;
+
+@include flex($justify: flex-start);
 }
 
 .steps-section__text-block {
@@ -14,44 +15,44 @@
   h3 {
     position: $pos-rel;
     margin-bottom: 92px;
-    font-family: $font-5;
     font-weight: 100;
-    font-size: 27px;
+    font-size: $fsz-7;
     line-height: 37px;
-    letter-spacing: -0.05em;
+    font-family: $font-5;
     color: $secondary-color;
-      &::after{
-        content: "";
-        position: $pos-a;
-        top: 54px;
-        left: 225px;
-        width: 92px;
-        height: 1px;
-        background-color: $secondary-color;
-      }
+    letter-spacing: -0.05em;
+    &::after {
+      content: "";
+      position: $pos-a;
+      top: 54px;
+      left: 225px;
+      width: 92px;
+      height: 1px;
+      background-color: $secondary-color;
+    }
   }
   .text-block__process-counter {
-    font-family: $font-5;
     font-style: normal;
-    font-size: 18px;
+    font-size: $fsz-4;
     line-height: 25px;
+    font-family: $font-5;
     color: $primary-text-color;
   }
   h5 {
     margin-top: 22px;
-    font-family: $font-5;
     font-style: normal;
     font-weight: 100;
-    font-size: 15px;
+    font-size: $fsz-8;
     line-height: 23px;
+    font-family: $font-5;
     color: $secondary-color;
   }
   p {
     width: 337px;
     margin-bottom: 15px;
-    font-family: $font-1;
-    font-size: 15px;
+    font-size: $fsz-8;
     line-height: 25px;
+    font-family: $font-1;
     color: $primary-text-color;
   }
 }
@@ -59,55 +60,69 @@
 .picture-block {
   width: 765px;
   height: 376px;
-  background-size: cover;
   background-image: url(../../assets/images/stepsImg.png);
+  background-size: cover;
 }
 
-.steps-section__visual-block{
-  .position-block{
-    @include flex($align:flex-start, $justify:space-between);
+.steps-section__visual-block {
+  .position-block {
     flex-wrap: wrap;
-    margin-bottom: 18px;
     width: 765px;
+    margin-bottom: 18px;
 
+@include flex($align: flex-start, $justify: space-between);
   }
-  
+
   .position-block__inner {
-    @include flex($align:flex-start, );
-    width: 127px;
     flex-direction: column;
+    width: 127px;
     margin-bottom: 36px;
-      &:hover {
-        cursor: pointer;
-        span {
-          &:nth-child(1){
-            color: $primary-text-color;
-            border-bottom: 1px solid $secondary-color;
-          }
-          &:nth-child(2){
-            color: $primary-text-color;
-          }
+
+@include flex($align: flex-start, );
+
+    &:hover {
+      cursor: pointer;
+      span {
+        &:nth-child(1) {
+          color: $primary-text-color;
+          border-bottom: 1px solid $secondary-color;
+        }
+        &:nth-child(2) {
+          color: $primary-text-color;
         }
       }
+    }
     span {
-      &:nth-child(1){
-        margin-bottom: 12px;
+      &:nth-child(1) {
         width: 19px;
-        font-family: $font-5;
+        margin-bottom: 12px;
         font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 21px;  
+        font-size: $fsz-8;
+        line-height: 21px;
+        font-family: $font-5;
         color: $secondary-text-color;
         border-bottom: 1px solid transparent;
       }
-      &:nth-child(2){
+      &:nth-child(2) {
+        font-size: $fsz-8;
+        line-height: 18px;
         font-family: $font-1;
-        font-size: 15px;
-        line-height: 18px;    
         color: $secondary-text-color;
       }
-      
     }
+  }
+}
+@media (max-width:$media-10) {
+  .steps-section__text-block {
+    display: $none;
+  }
+  .steps-section__content {
+    justify-content: center;
+    margin-top: 40px;
+  }
+}
+@media (max-width:$media-4) {
+  .steps-section__content {
+    display: $none;
   }
 }
