@@ -174,10 +174,14 @@
   display: $none;
 }
 
+a.contacts:hover {
+  color: darken($secondary-color,20%);
+}
+
 .social-icons {
   width: 71px;
   margin: 0 auto;
-  margin-bottom: 43px;
+  padding-bottom: 43px;
 
 @include autoM();
 
