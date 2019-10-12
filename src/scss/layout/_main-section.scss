@@ -260,11 +260,7 @@
     position: $pos-rel;
     display: block;
     width: 340px;
-
-@include autoM();
-  }
-  .promo-section__mobi-img {
-    margin-bottom: 34px;
+    margin: 0 auto 34px;
   }
   .promo-section__left-control {
     position: $pos-a;
