@@ -15,7 +15,7 @@
 }
 
 @mixin form-input($color: $third-text-color) {
-  font-size: 18px;
+  font-size: $fsz-4;
   line-height: 24px;
   font-family: $font-1;
   color: $color;

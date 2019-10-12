@@ -1,6 +1,5 @@
 .questions-form-section {
   background: linear-gradient(to top,$primary-color 81.09%, $primary-text-color 81.09% );
-   
 }
 
 .questions-form-box {
@@ -8,247 +7,235 @@
   margin: 0 auto 52px;
   background-color: $forth-color;
   h3 {
+    margin: 0 auto 45px;
     padding-top: 34px;
-    margin-bottom: 45px;
-   font-family: $font-5;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 20px;
-   line-height: 28px;
-   text-align: center;
-   color: $primary-text-color;
+    font-style: normal;
+    font-size: $fsz-11;
+    line-height: 28px;
+    font-family: $font-5;
+    text-align: center;
+    color: $primary-text-color;
   }
 }
 .questions-form-flex {
   display: flex;
-  width: 516px;
-  margin: 0 auto;
   justify-content: space-between;
-  
+  width: 516px;
+
+@include autoM();
 }
 
 .questions-form {
-  @include flex($justify: center, $align: center);
   flex-direction: column;
-  margin: 0 auto;
-  
   text-align: left;
-    &__item {
-      @include flex($justify: flex-start, $align: flex-start);
-      flex-flow: column wrap;
-        label {
-          font-family: $font-1;
-          font-size: 15px;
-          line-height: 20px;
-          color: $secondary-text-color;
-        }
-    }
-    &__text-input {
-      margin-bottom: 48px;
-      padding-bottom: 8px;
-      padding-top: 7px;
-      outline: 0;
-      width: 231px;
-      color: $primary-text-color;
-      border: 0;
-      background-color: $forth-color;
-      border-bottom: 1px solid $secondary-text-color;
-        &::-webkit-input-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &::-moz-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &:-moz-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &:-ms-input-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &:focus::-webkit-input-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;
-        }
-        &:focus::-moz-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;
-        }
-        &:focus:-moz-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;
-        }
-        &:focus:-ms-input-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;
-        }
 
-    }
-    &__phone-input {
-      padding-bottom: 8px;
-      padding-top: 7px;
-      outline: 0;
-      width: 231px;
-      color: $primary-text-color;
-      border: 0;
-      background-color: $forth-color;
-      border-bottom: 1px solid $secondary-text-color;
-      margin-bottom: 48px;
-        &::-webkit-input-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &::-moz-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &:-moz-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &:-ms-input-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &:focus::-webkit-input-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;}
-        &:focus::-moz-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;}
-        &:focus:-moz-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;}
-        &:focus:-ms-input-placeholder {
-          text-indent: 500px;
-          transition: text-indent 0.3s ease;}
+@include autoM();
 
-    }
-    &__question-input {
-      padding-bottom: 8px;
-      padding-top: 7px;
-      outline: 0;
-      width: 516px;
-      color: $primary-text-color;
-      border: 0;
-      background-color: $forth-color;
-      border-bottom: 1px solid $secondary-text-color;
-      margin-bottom: 48px;
-        &::-webkit-input-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &::-moz-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &:-moz-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &:-ms-input-placeholder {
-          text-indent: 0px;
-          transition: text-indent 0.3s ease;
-          font-family: $font-1;
-          font-size: 18px;
-          line-height: 24px;
-          color: $primary-text-color;
-        }
-        &:focus::-webkit-input-placeholder {
-          text-indent: 600px;
-          transition: text-indent 0.3s ease;}
-        &:focus::-moz-placeholder {
-          text-indent: 600px;
-          transition: text-indent 0.3s ease;}
-        &:focus:-moz-placeholder {
-          text-indent: 600px;
-          transition: text-indent 0.3s ease;}
-        &:focus:-ms-input-placeholder {
-          text-indent: 600px;
-          transition: text-indent 0.3s ease;}
+@include flex($justify: center, $align: center);
 
-    }
+  &__item {
+    flex-flow: column wrap;
 
-    
+@include flex($justify: flex-start, $align: flex-start);
+
+    label {
+      font-size: $fsz-8;
+      line-height: 20px;
+      font-family: $font-1;
+      color: $secondary-text-color;
+    }
+  }
+  &__text-input {
+    width: 231px;
+    margin-bottom: 48px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    color: $primary-text-color;
+    background-color: $forth-color;
+    border: 0;
+    border-bottom: 1px solid $secondary-text-color;
+    outline: 0;
+    &::-webkit-input-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &::-moz-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &:-moz-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &:-ms-input-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &:focus::-webkit-input-placeholder {
+      @include placeholderAction();
+    }
+    &:focus::-moz-placeholder {
+      @include placeholderAction();
+    }
+    &:focus:-moz-placeholder {
+      @include placeholderAction();
+    }
+    &:focus:-ms-input-placeholder {
+      @include placeholderAction();
+    }
+  }
+  &__phone-input {
+    width: 231px;
+    margin-bottom: 48px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    color: $primary-text-color;
+    background-color: $forth-color;
+    border: 0;
+    border-bottom: 1px solid $secondary-text-color;
+    outline: 0;
+    &::-webkit-input-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &::-moz-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &:-moz-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &:-ms-input-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &:focus::-webkit-input-placeholder {
+      @include placeholderAction();
+    }
+    &:focus::-moz-placeholder {
+      @include placeholderAction();
+    }
+    &:focus:-moz-placeholder {
+      @include placeholderAction();
+    }
+    &:focus:-ms-input-placeholder {
+      @include placeholderAction();
+    }
+  }
+  &__question-input {
+    width: 516px;
+    margin-bottom: 48px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    color: $primary-text-color;
+    background-color: $forth-color;
+    border: 0;
+    border-bottom: 1px solid $secondary-text-color;
+    outline: 0;
+    &::-webkit-input-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &::-moz-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &:-moz-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &:-ms-input-placeholder {
+      @include form-input($color: $primary-text-color);
+    }
+    &:focus::-webkit-input-placeholder {
+      @include placeholderAction($value: 600px);
+    }
+    &:focus::-moz-placeholder {
+      @include placeholderAction($value: 600px);
+    }
+    &:focus:-moz-placeholder {
+      @include placeholderAction($value: 600px);
+    }
+    &:focus:-ms-input-placeholder {
+      @include placeholderAction($value: 600px);
+    }
+  }
 }
 
-.checkbox-box-questions-form{
-  font-family: $font-1;
-  font-size: 16px;
-  line-height: 22px;
+.checkbox-box-questions-form {
   width: 286px;
-  color: $primary-text-color;
-  font-weight: 500;
   margin-bottom: 39px;
-  
+  font-size: $fsz-9;
+  line-height: 22px;
+  font-family: $font-1;
+  color: $primary-text-color;
 }
 
 .contacts {
   margin-bottom: 26px;
-  font-family: $font-5;
   font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
+  font-size: $fsz-11;
   line-height: 28px;
+  font-family: $font-5;
   text-align: center;
   color: $secondary-color;
 }
+.last-section__mobi-contacts {
+  display: $none;
+}
 
 .social-icons {
-  @include flex();
   width: 71px;
   margin: 0 auto;
   margin-bottom: 43px;
+
+@include autoM();
+
+@include flex();
 }
 .map-img {
   display: block;
-  margin: 0 auto;
-  margin-bottom: 66px;
+  margin: 0 auto 66px;
+}
+
+@media (max-width:$media-3) {
+  .questions-form-box {
+    width: auto;
+  }
+  .map-img {
+    width: 340px;
+    height: 255px;
+    margin-bottom: 41px;
+  }
+}
+
+@media (max-width:$media-9) {
+  .questions-form-box {
+    width: auto;
+  }
+  .questions-form-flex {
+    flex-direction: column;
+    width: auto;
+  }
+  .questions-form__text-input,
+  .questions-form__phone-input,
+  .questions-form__question-input,
+  .checkbox-box-questions-form {
+    width: 340px;
+  }
+  .questions-form__question-input {
+    width: 340px;
+    margin-bottom: 22px;
+  }
+  footer,
+  .questions-form-box + .contacts,
+  .questions-form-box + .contacts + .social-icons {
+    display: $none;
+  }
+  .last-section__mobi-contacts {
+    display: block;
+
+    .contacts {
+      width: 340px;
+      margin: 0 auto 23px;
+      font-size: $fsz-4;
+      line-height: 25px;
+    }
+    .social-icons {
+      width: 99px;
+    }
+    .first-mobi-social {
+      margin-right: 20px;
+    }
+  }
 }

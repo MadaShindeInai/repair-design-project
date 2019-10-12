@@ -312,3 +312,9 @@ input[type=checkbox]:checked + label:before {
     }
   }
 }
+@media (max-width:$media-9) {
+  .question__button {
+    width: 340px;
+    margin-bottom: 0;
+  }
+}
