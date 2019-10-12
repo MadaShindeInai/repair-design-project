@@ -5,7 +5,7 @@
     margin-bottom: 13px;
     font-style: normal;
     font-weight: 100;
-    font-size: 20px;
+    font-size: $fsz-11;
     line-height: 28px;
     font-family: $font-5;
     color: $forth-color;
@@ -18,7 +18,8 @@
 .design-section__content-box {
   flex-wrap: wrap;
   max-width: 1236px;
-  margin: 0 auto ;
+
+@include autoM();
 
 @include flex($justify: space-around, $align: flex-start);
 }
@@ -79,9 +80,10 @@
 
 // height: 320px;
   width: 330px;
-  margin: 0 auto;
   text-align: left;
   background-color: $primary-text-color;
+
+@include autoM();
 
   .text-content__head {
     margin-top: 25px;
@@ -90,13 +92,13 @@
     list-style-type: none;
     font-style: normal;
     font-weight: 100;
-    font-size: 18px;
+    font-size: $fsz-4;
     line-height: 25px;
     font-family: $font-5;
     text-align: left;
     color: $third-text-color;
     .text-content__points {
-      font-size: 15px;
+      font-size: $fsz-8;
       line-height: 25px;
       font-family: $font-1;
       color: $forth-text-color ;
@@ -111,7 +113,7 @@
 
   .design-text-line {
     display: block;
-    font-size: 15px;
+    font-size: $fsz-8;
     line-height: 21px;
     font-family: $font-2;
     text-align: left;
@@ -121,21 +123,22 @@
     margin-bottom: 13px;
     font-style: normal;
     font-weight: 100;
-    font-size: 21px;
+    font-size: $fsz-12;
     line-height: 28px;
     font-family: $font-5;
     color: $forth-color;
   }
   p {
     width: 681px;
-    margin: 0 auto;
     padding-bottom: 92px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: $fsz-11;
     line-height: 34px;
     font-family: $font-1;
     text-align: center;
     color: $third-text-color;
+
+@include autoM();
   }
   .streak {
     margin-bottom: 24px;
@@ -146,7 +149,7 @@
   margin-top: -21px;
   margin-bottom: 18px;
   margin-left: 99px;
-  font-size: 15px;
+  font-size: $fsz-8;
   line-height: 21px;
   font-family: $font-2;
   text-align: left;
