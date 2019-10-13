@@ -30,10 +30,10 @@ module.exports = {
         }
       ]
       },
-      {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
-        },
+      // {
+      //   test: /\.css$/,
+      //   use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      //   },
       {
         test: /\.(png|jpe?g|gif|svg)$/,
           use: [
