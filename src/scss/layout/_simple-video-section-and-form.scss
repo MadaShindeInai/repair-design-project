@@ -11,6 +11,12 @@
     color: $primary-text-color;
   }
 }
+.simple-heading {
+  width: 1px;
+  height: 1px;
+  color: transparent;
+  background-color: transparent;
+}
 
 iframe {
   margin-bottom: -4px;
@@ -158,7 +164,9 @@ iframe {
   text-align: left;
 
 @include autoM();
+
 @include flex($justify: flex-end, $align: flex-end);
+
   &__item-free {
     flex-flow: column wrap;
 

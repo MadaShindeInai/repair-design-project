@@ -36,7 +36,7 @@
         			<a href="#" class="navbar__link">CONTACTS</a>
         		</li>
         		<li class="navbar__item navbar__item_phone-number">
-              <a href="tel:+7 (928) 768-32-39" class="navbar__link navbar__item_phone-number">+7 (928) 768-32-39</a>
+              <a href="tel:+79287683239" class="navbar__link navbar__item_phone-number">+7 (928) 768-32-39</a>
         		</li>
         		<li class="navbar__item">
         			<button class="navbar__button">REQUEST A CALL</button>
@@ -140,7 +140,7 @@
         </div>
         <div class="iframe-box">
             <iframe width="817" height="434" src="https://www.youtube-nocookie.com/embed/zBCbbXlVOhs?start=2"
-             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
         </div>
       </div>
@@ -154,16 +154,16 @@
                from one of our facilities!<br> Leave a request below and you will receive
                 a link to the broadcast.
           </p>
-          <form class="form" action="" method="post">
+          <form class="form" action="#" method="post">
             <div class="form__item">
-              <label for="username">Name</label>
-              <input class="form__text-input" type="text" name="username"
+              <label for="username-simple">Name</label>
+              <input class="form__text-input" type="text" id="username-simple"
                placeholder="What is your name:" pattern="^[a-zA-Z]+$" required>
                <div class="requirements">Must contain name!</div>
             </div>  
             <div class="form__item">
-              <label for="phone-number">Phone</label>
-              <input class="form__phone-input" type="tel" name="phone-number"
+              <label for="phone-number-simple">Phone</label>
+              <input class="form__phone-input" type="tel" id="phone-number-simple"
                placeholder="Your phone number:" pattern="[0-9]{5,20}" required>
                <div class="requirements">Must contain 5-20 digits!</div>
             </div>
@@ -178,17 +178,18 @@
           </form>
           <!-- mobi version of form  -->
           <div class="simple-mobi-form__form-box">
-              <form class="simple-mobi-form " action="" method="post">
+              <form class="simple-mobi-form " action="#" method="post">
                   <div class="simple-mobi-form__item-free">
-                    <label for="username">Name</label>
-                    <input class="simple-mobi-form__text-input-free" type="text" name="username"
+                    <label for="username-simpleM">Name</label>
+                    <input class="simple-mobi-form__text-input-free" type="text" id="username-simpleM"
                      placeholder="What is your name:" pattern="^[a-zA-Z]+$" required>
                      <div class="requirements">Must contain letters!</div>
                   </div>  
                   <div class="simple-mobi-form__item-free">
-                    <label for="phone-number">Phone</label>
-                    <input class="simple-mobi-form__phone-input-free" type="tel" name="phone-number"
-                     placeholder="Your phone number:"pattern="[0-9]{5,20}" required>
+                    <label for="phone-number-simple">Phone</label>
+                    <input class="simple-mobi-form__phone-input-free" type="tel"
+                     name="phone-number-simpleM" 
+                     placeholder="Your phone number:" pattern="[0-9]{5,20}" required>
                      <div class="requirements">Must contain 5-20 digits!</div>
                   </div>
                   <div class="checkbox-box-free">
@@ -201,6 +202,7 @@
                 </form>
             </div>
             <!-- mobi version of form end -->
+            <h6 class="simple-heading">a</h6>
         </div>
     </section>
     <section class="pricing-section">
@@ -213,7 +215,7 @@
           <div class="pricing-section__content">
             <div class="pricing-section__text-content">
               <ul class="text-content__head">
-                Redecorating
+                <li>Redecorating</li>
                 <li class="text-content__points">• Dismantling of old coatings  </li>
                 <li class="text-content__points">• Wallpapering</li>
                 <li class="text-content__points">• Painting walls and ceilings</li>
@@ -230,7 +232,7 @@
           <div class="pricing-section__content">
             <div class="pricing-section__text-content">
               <ul class="text-content__head">
-                Overhaul
+                <li>Overhaul</li>
                 <li class="text-content__points">• Dismantling of old coatings  </li>
                 <li class="text-content__points">• Wallpapering</li>
                 <li class="text-content__points">• Painting walls and ceilings</li>
@@ -247,7 +249,7 @@
           <div class="pricing-section__content">
             <div class="pricing-section__text-content">
               <ul class="text-content__head">
-                Designer Repair
+                <li>Designer Repair</li>
                 <li class="text-content__points">• Dismantling of old coatings  </li>
                 <li class="text-content__points">• Wallpapering</li>
                 <li class="text-content__points">• Painting walls and ceilings</li>
@@ -292,27 +294,27 @@
         </div>
         <div class="free-invite-section__form-box">
           <h4>Leave a request for free departure of the measurer</h4>
-          <form class="form-free " action="" method="post">
+          <form class="form-free" action="#" method="post">
               <div class="form-free__item-free">
-                <label for="username">Name</label>
-                <input class="form-free__text-input-free" type="text" name="username"
-                 placeholder="What is your name:"pattern="^[a-zA-Z]+$" required>
+                <label for="username-free">Name</label>
+                <input class="form-free__text-input-free" type="text" id="username-free" 
+                 placeholder="What is your name:" pattern="^[a-zA-Z]+$" required>
                  <div class="requirements">Must contain letters!!</div>
               </div>  
               <div class="form-free__item-free">
-                <label for="phone-number">Phone</label>
-                <input class="form-free__phone-input-free" type="tel" name="phone-number"
+                <label for="phone-number-free">Phone</label>
+                <input class="form-free__phone-input-free" type="tel" id="phone-number-free" 
                  placeholder="Your phone number:" pattern="[0-9]{5,20}" required>
                  <div class="requirements">Must contain 5-20 digits!</div>
               </div>
               <div class="form-free__item-free">
-                <label for="email">Email</label>
-                <input class="form-free__email-input-free" type="email" name="e-mail"
+                <label for="email-free">Email</label>
+                <input class="form-free__email-input-free" type="email" id="email-free"
                    placeholder="Your email" required>
                 <div class="requirements">Must be a valid email address.</div>
               </div>
               <div class="checkbox-box-free">
-                  <input class="free-checkbox" type="checkbox" id="check-free" name="check" required />
+                  <input class="free-checkbox" type="checkbox" id="check-free"  required />
                   <label for="check-free">I agree to the processing of personal data</label>
                 </div>
               <button class="form-free__button" name="submit">
@@ -383,7 +385,7 @@
           <div class="design-section__content">
             <div class="design-section__text-content">
               <ul class="text-content__head">
-                Mini
+                <li>Mini</li>
                 <li class="text-content__points">• Measurement drawing  </li>
                 <li class="text-content__points">• Redevelopment</li>
                 <li class="text-content__points">• Layout of furniture</li>
@@ -398,7 +400,7 @@
           <div class="design-section__content">
             <div class="design-section__text-content">
               <ul class="text-content__head">
-                Standart
+                <li>Standart</li>
                 <li class="text-content__points">• Measurement drawing  </li>
                 <li class="text-content__points">• Redevelopment</li>
                 <li class="text-content__points">• Layout of furniture</li>
@@ -416,7 +418,7 @@
           <div class="design-section__content">
             <div class="design-section__text-content">
               <ul class="text-content__head">
-                Full
+                <li>Full</li>
                 <li class="text-content__points">• Measurement drawing  </li>
                 <li class="text-content__points">• Redevelopment</li>
                 <li class="text-content__points">• Layout of furniture</li>
@@ -632,24 +634,24 @@
     <div class="inner">
       <div class="questions-form-box">
         <h3>HAVE ANY QUESTIONS?</h3>
-        <form class="questions-form " action="" method="post">
+        <form class="questions-form " action="#" method="post">
           <div class="questions-form-flex">
             <div class="questions-form__item">
               <label for="username">Name</label>
-              <input class="questions-form__text-input" type="text" name="username"
+              <input class="questions-form__text-input" type="text" id="username" 
                placeholder="What is your name:" pattern="^[a-zA-Z]+$" required>
                <div class="requirements">Must contain letters!</div>
             </div>  
             <div class="questions-form__item">
               <label for="phone-number">Phone</label>
-              <input class="questions-form__phone-input" type="tel" name="phone-number"
+              <input class="questions-form__phone-input" type="tel" id="phone-number" 
                placeholder="Your phone number:" pattern="[0-9]{5,20}" required>
                <div class="requirements">Must contain 5-20 digits!</div>
             </div>
           </div>
           <div class="questions-form__item">
             <label for="question">Question</label>
-            <input class="questions-form__question-input" type="text" name="question"
+            <input class="questions-form__question-input" type="text" id="question" 
                placeholder="I want to know:" pattern=".{20,}" required>
                <div class="requirements">
                   Must be at least 20 characters!
@@ -665,7 +667,7 @@
           </form>
       </div>
       <p class="contacts">ROSTOV-ON-DON, NANSEN ST., 239 SHOPPING CENTER<br>DECORUM 
-        TEL <a class="contacts" href="tel:+7 (928) 768-32-39">+7 (928) 768 32 39</a>
+        TEL <a class="contacts" href="tel:+79287683239">+7 (928) 768 32 39</a>
       </p>
       <div class="social-icons">
         <a href="#" target="_blank" rel="noopener">
@@ -678,7 +680,7 @@
       <img class="map-img" src="/assets/images/map.png" alt="map" height="465"  width="925">
       <div class="last-section__mobi-contacts">
         <p class="contacts">ROSTOV-ON-DON, NANSEN ST., 239 SHOPPING CENTER<br>DECORUM 
-          TEL <a class="contacts" href="tel:+7 (928) 768-32-39">+7 (928) 768 32 39</a>
+          TEL <a class="contacts" href="tel:+79287683239">+7 (928) 768 32 39</a>
         </p>
         <div class="social-icons">
           <a class="first-mobi-social" href="#" target="_blank" rel="noopener">
@@ -695,11 +697,11 @@
       <div class="inner">
           <nav class="header__navbar">
             <ul class="navbar">
-              <span class="navbar__item">
+              <li class="navbar__item">
                 <span class="header__logo">
                   <a class="header__logo_text" href="#"> IC "REPAIR DESIGN PROJECT"</a>
                 </span>
-              </span>
+              </li>
               <li class="navbar__item">
                 <a href="#" class="navbar__link">HOME</a>
               </li>
@@ -719,7 +721,7 @@
                 <a href="#" class="navbar__link">CONTACTS</a>
               </li>
               <li class="navbar__item navbar__item_phone-number">
-                  <a href="tel:+7 (928) 768-32-39" class="navbar__link navbar__item_phone-number">+7 (928) 768-32-39</a>
+                  <a href="tel:+79287683239" class="navbar__link navbar__item_phone-number">+7 (928) 768-32-39</a>
               </li>
               <li class="navbar__item">
                 <button class="footer__button">REQUEST A CALL</button>
